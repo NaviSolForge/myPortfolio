@@ -39,7 +39,7 @@ La gray3サイトの和モダン（グレージュ＋オレンジ）とは意図
 
 ## デプロイ
 - GitHub: `NaviSolForge/myPortfolio`
-- Netlify: 未接続（このリポジトリを新規プロジェクトとしてNetlifyにインポートし、`〇〇.netlify.app`の仮URLで公開予定）
+- Netlify: 公開済み。`https://navisolforgeportfolio.netlify.app/`
 - 独自ドメインは今のところ予定なし。まずは仮URLで営業に使う想定。
 
 ## 今後の想定
