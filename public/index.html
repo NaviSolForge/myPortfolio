@@ -97,16 +97,32 @@ a:focus-visible, button:focus-visible{ outline:2px solid var(--ember); outline-o
 .hero h1{
   font-family:'Shippori Mincho B1', serif;
   font-weight:700;
-  font-size:clamp(28px, 5vw, 40px);
+  font-size:clamp(24px, 4.4vw, 36px);
   line-height:1.5;
   margin:0 0 22px;
   text-wrap:balance;
 }
+.hero h1 .h1-en{
+  display:block;
+  font-family:'Big Shoulders Display', sans-serif;
+  font-weight:700;
+  font-size:clamp(14px, 2.6vw, 18px);
+  letter-spacing:0.05em;
+  color:var(--ink-soft);
+  margin-bottom:12px;
+}
+.hero h1 .h1-en .dot{ color:var(--ember); }
 .hero p{
   max-width:34em;
   color:var(--ink-soft);
   font-size:15.5px;
   margin:0;
+}
+.hero p.hero-lead{
+  color:var(--ink);
+  font-weight:700;
+  font-size:16.5px;
+  margin:0 0 10px;
 }
 
 section{ padding:64px 0; border-top:1px solid var(--line); }
@@ -352,8 +368,9 @@ body.intro-locked{ overflow:hidden; }
   <div class="wrap">
     <div class="eyebrow">WEB CRAFT FOR LOCAL SHOPS</div>
     <div class="wordmark">NaviSolForge<span class="dot">.</span></div>
-    <h1>小さなお店に、<br>届く一枚を。</h1>
-    <p>看板を掲げる感覚でウェブサイトを。<br>難しく考えずに、ネット上に看板を掲げてみませんか？<br>テンプレートに当てはめるのではなく、そのお店のためだけの一枚を、ヒアリングから公開後の運用まで一貫して対応します。</p>
+    <h1><span class="h1-en">Navigate<span class="dot">.</span> Solve<span class="dot">.</span> Forge<span class="dot">.</span> ――</span>導き、解決し、鍛える。小さなお店の一枚を。</h1>
+    <p class="hero-lead">看板を掲げる感覚であなただけのウェブサイトを。</p>
+    <p>難しく考えずに、ネット上にもあなたの看板を掲げてみませんか？<br>テンプレートに当てはめるのではなく、あなたのためだけのWebサイトを。<br>作りたいもののヒアリングから公開後の運用まで一貫して対応します。</p>
   </div>
 </div>
 
