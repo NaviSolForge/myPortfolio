@@ -355,7 +355,6 @@ body.intro-locked{ overflow:hidden; }
 
 @media (prefers-reduced-motion: reduce){
   .hero canvas{ display:none; }
-  .intro-splash{ display:none; }
 }
 </style>
 </head>
@@ -477,10 +476,15 @@ body.intro-locked{ overflow:hidden; }
   var text = document.getElementById('intro-splash-text');
 
   function unlock(){ document.body.classList.remove('intro-locked'); }
+  function remove(){ if(splash.parentNode) splash.parentNode.removeChild(splash); }
 
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
-    splash.parentNode.removeChild(splash);
-    unlock();
+    text.style.transition = 'none';
+    text.classList.add('is-visible');
+    setTimeout(function(){
+      remove();
+      unlock();
+    }, 10000);
     return;
   }
 
@@ -492,7 +496,7 @@ body.intro-locked{ overflow:hidden; }
     unlock();
   }, 10000);
   splash.addEventListener('transitionend', function(){
-    if(splash.parentNode) splash.parentNode.removeChild(splash);
+    remove();
   });
 })();
 
