@@ -480,7 +480,7 @@ body.intro-locked{ overflow:hidden; }
     setTimeout(function(){
       remove();
       unlock();
-    }, 10000);
+    }, 5000);
     return;
   }
 
@@ -490,7 +490,7 @@ body.intro-locked{ overflow:hidden; }
   setTimeout(function(){
     splash.classList.add('is-hidden');
     unlock();
-  }, 10000);
+  }, 5000);
   splash.addEventListener('transitionend', function(e){
     if(e.target === splash) remove();
   });
